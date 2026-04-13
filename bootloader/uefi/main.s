@@ -1,0 +1,62 @@
+[bits 64]
+
+;;; Datatypes - START ;;;
+
+
+;;; Datatypes - END ;;;
+
+
+
+;;; Status codes - START;;;
+; OK
+EFI_SUCCESS              equ 0x0
+
+; Errors
+EFI_ERROR                equ 0x80000000000000
+EFI_LOAD_ERROR           equ 1  or EFI_ERROR
+EFI_INVALID_PARAMETER    equ 2  or EFI_ERROR
+EFI_UNSUPPORTED          equ 3  or EFI_ERROR
+EFI_BAD_BUFFER_SIZE      equ 4  or EFI_ERROR
+EFI_BUFFER_TOO_SMALL     equ 5  or EFI_ERROR
+EFI_NOT_READY            equ 6  or EFI_ERROR
+EFI_DEVICE_ERROR         equ 7  or EFI_ERROR
+EFI_WRITE_PROTECTED      equ 8  or EFI_ERROR
+EFI_OUT_OF_RESOURCES     equ 9  or EFI_ERROR
+EFI_VOLUME_CORRUPTED     equ 10 or EFI_ERROR
+EFI_VOLUME_FULL          equ 11 or EFI_ERROR
+EFI_NO_MEDIA             equ 12 or EFI_ERROR
+EFI_MEDIA_CHANGED        equ 13 or EFI_ERROR
+EFI_NOT_FOUND            equ 14 or EFI_ERROR
+EFI_ACCESS_DENIED        equ 15 or EFI_ERROR
+EFI_NO_RESPONSE          equ 16 or EFI_ERROR
+EFI_NO_MAPPING           equ 17 or EFI_ERROR
+EFI_TIMEOUT              equ 18 or EFI_ERROR
+EFI_NOT_STARTED          equ 19 or EFI_ERROR
+EFI_ALREADY_STARTED      equ 20 or EFI_ERROR
+EFI_ABORTED              equ 21 or EFI_ERROR
+EFI_ICMP_ERROR           equ 22 or EFI_ERROR
+EFI_TFTP_ERROR           equ 23 or EFI_ERROR
+EFI_PROTOCOL_ERROR       equ 24 or EFI_ERROR
+EFI_INCOMPATIBLE_VERSION equ 25 or EFI_ERROR
+EFI_SECURITY_VIOLATION   equ 26 or EFI_ERROR
+EFI_CRC_ERROR            equ 27 or EFI_ERROR
+EFI_END_OF_MEDIA         equ 28 or EFI_ERROR
+EFI_END_OF_FILE          equ 31 or EFI_ERROR
+EFI_INVALID_LANGUAGE     equ 32 or EFI_ERROR
+EFI_COMPROMISED_DATA     equ 33 or EFI_ERROR
+EFI_IP_ADDRESS_CONFLICT  equ 34 or EFI_ERROR
+EFI_HTTP_ERROR           equ 35 or EFI_ERROR
+
+; Warnings
+EFI_WARN_UNKNOWN_GLYPH    equ 1
+EFI_WARN_DELETE_FAILURE   equ 2
+EFI_WARN_WRITE_FAILURE    equ 3
+EFI_WARN_BUFFER_TOO_SMALL equ 4
+EFI_WARN_STALE_DATA       equ 5
+EFI_WARN_FILE_SYSTEM      equ 6
+EFI_WARN_RESET_REQUIRED   equ 7
+
+;;; Status codes - END ;;
+
+;;; EFI_TABLE_HEADER - START ;;;
+; todo
