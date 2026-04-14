@@ -1,13 +1,17 @@
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; status_codes.s                                             ;;
+;;                                                            ;;
+;; UEFI status codes.                                         ;;
+;;                                                            ;;
+;; For more information refer to official UEFI documentation: ;;
+;; https://uefi.org/specs/UEFI/2.11/Apx_D_Status_Codes.html   ;;
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+
+
 [bits 64]
 
-;;; Datatypes - START ;;;
 
-
-;;; Datatypes - END ;;;
-
-
-
-;;; Status codes - START;;;
 ; OK
 EFI_SUCCESS              equ 0x0
 
@@ -55,8 +59,3 @@ EFI_WARN_BUFFER_TOO_SMALL equ 4
 EFI_WARN_STALE_DATA       equ 5
 EFI_WARN_FILE_SYSTEM      equ 6
 EFI_WARN_RESET_REQUIRED   equ 7
-
-;;; Status codes - END ;;
-
-;;; EFI_TABLE_HEADER - START ;;;
-; todo
