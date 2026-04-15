@@ -19,4 +19,5 @@ EFI_1_02_SYSTEM_TABLE_REVISION equ ((1<<16) or 02)
 
 
 
+
 %endif
